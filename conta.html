@@ -7,6 +7,183 @@
     <title>AirElite</title>
 </head>
 <body>
+
     
+    <header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+        <img src="img/logo.svg" alt="Logotipo AirElite">
+        <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></label>
+        <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="voos.html">Voos</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+        <a href="index.html" class="nav-extra">Sair da conta</a>
+        <a href="conta.html" class="btn btn-gold">Minha conta</a>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+    <section class="section">
+        <div class="container">
+
+        <div class="account-header">
+            <div class="account-avatar">MA</div>
+            <div class="account-info">
+            <h2>Mariana Almeida</h2>
+            <span>mariana.almeida@email.com</span>
+            <span>+55 (11) 98765-4321</span>
+            <span class="account-badge">★ AirElite Premium</span>
+            </div>
+        </div>
+
+        <div class="stats-band">
+            <div class="stat-card"><strong>18</strong><span>Viagens</span></div>
+            <div class="stat-card"><strong>4,9</strong><span>Avaliação média</span></div>
+            <div class="stat-card"><strong>3</strong><span>Documentos</span></div>
+            <div class="stat-card"><strong>7</strong><span>Favoritos</span></div>
+        </div>
+
+        <input type="radio" name="conta-tab" id="tab-perfil" class="tab-input" checked>
+        <input type="radio" name="conta-tab" id="tab-preferencias" class="tab-input">
+        <input type="radio" name="conta-tab" id="tab-seguranca" class="tab-input">
+
+        <div class="tabs">
+            <label for="tab-perfil" class="tab-label">Perfil</label>
+            <label for="tab-preferencias" class="tab-label">Preferências</label>
+            <label for="tab-seguranca" class="tab-label">Segurança</label>
+        </div>
+
+        <div class="tab-panel panel-perfil">
+            <div class="settings-list">
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/pessoa.svg" alt="Pessoa" class="icon-img"></div>
+                <div class="settings-text"><strong>Informações pessoais</strong><span>Atualize seus dados pessoais e de contato</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/documento.svg" alt="Documento" class="icon-img"></div>
+                <div class="settings-text"><strong>Documentos</strong><span>Gerencie seus documentos e licenças</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/relogio.svg" alt="Horário" class="icon-img"></div>
+                <div class="settings-text"><strong>Histórico de reservas</strong><span>Veja suas viagens anteriores</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/favorito.svg" alt="Favorito" class="icon-img"></div>
+                <div class="settings-text"><strong>Favoritos</strong><span>Aeronaves e pilotos salvos</span></div>
+                <span class="chevron">></span>
+            </div>
+            </div>
+        </div>
+
+        <div class="tab-panel panel-preferencias">
+            <div class="settings-list">
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/suporte.svg" alt="Suporte" class="icon-img"></div>
+                <div class="settings-text"><strong>Notificações</strong><span>Gerencie seus alertas e lembretes</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/idioma.svg" alt="Idioma" class="icon-img"></div>
+                <div class="settings-text"><strong>Idioma e região</strong><span>Português (Brasil) · BRL · Km</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="img/icons/helicoptero.svg" alt="Helicóptero" class="icon-img"></div>
+                <div class="settings-text"><strong>Preferências de viagem</strong><span>Bagagem, alimentação e embarque</span></div>
+                <span class="chevron">></span>
+            </div>
+            </div>
+        </div>
+
+        <div class="tab-panel panel-seguranca">
+            <div class="settings-list">
+            <div class="settings-item">
+                <div class="settings-icon"><img src="pasta-de-imagens/senha.svg" alt="Senha" class="icon-img"></div>
+                <div class="settings-text"><strong>Senha e autenticação</strong><span>Altere sua senha e ative a biometria</span></div>
+                <span class="chevron"></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="pasta-de-imagens/seguranca.svg" alt="Segurança" class="icon-img"></div>
+                <div class="settings-text"><strong>Privacidade</strong><span>Gerencie seus dados e permissões</span></div>
+                <span class="chevron">></span>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon"><img src="pasta-de-imagens/relogio.svg" alt="Horário" class="icon-img"></div>
+                <div class="settings-text"><strong>Sessões ativas</strong><span>Veja onde sua conta está conectada</span></div>
+                <span class="chevron">></span>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <h2>AirElite Premium</h2>
+        <p>Eleve sua experiência com benefícios exclusivos na próxima viagem executiva.</p>
+        <a href="voos.html" class="btn btn-gold btn-lg">Conhecer benefícios →</a>
+    </section>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="brand">
+            <img src="img/logo.svg" alt="Logotipo AirElite">
+            <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+            </a>
+            <p>Voos privados e helicópteros executivos com segurança, conforto e exclusividade em cada trajeto.</p>
+            <div class="social-row">
+            <a href="#" aria-label="Instagram"><img src="pasta-de-imagens/instagram.svg" alt="Instagram" class="icon-img"></a>
+            <a href="#" aria-label="LinkedIn"><img src="pasta-de-imagens/linkedin.svg" alt="LinkedIn" class="icon-img"></a>
+            <a href="#" aria-label="WhatsApp"><img src="pasta-de-imagens/WhatsApp.png" alt="WhatsApp" class="icon-img"></a>
+            </div>
+        </div>
+        <nav class="footer-col">
+            <h4>Links rápidos</h4>
+            <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="voos.html">Voos</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+        <nav class="footer-col">
+            <h4>Conta</h4>
+            <ul>
+            <li><a href="login.html">Entrar</a></li>
+            <li><a href="cadastro.html">Criar conta</a></li>
+            <li><a href="conta.html">Minha conta</a></li>
+            <li><a href="reserva.html">Reservar viagem</a></li>
+            </ul>
+        </nav>
+        <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+            <li>contato@airelite.com.br</li>
+            <li>(51) 95678-7568</li>
+            <li>Central de ajuda 24h</li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <span>© 2026 AirElite. Todos os direitos reservados.</span>
+        </div>
+    </div>
+    </footer>
+        
 </body>
 </html>
