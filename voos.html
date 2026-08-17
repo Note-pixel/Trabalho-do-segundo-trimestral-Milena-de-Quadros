@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>AirElite</title>
+    </head>
+    <body>
+                
+        <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+            <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+            <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></label>
+            <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="voos.html" class="active">Voos</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+            <a href="cadastro.html" class="nav-extra">Criar conta</a>
+            <a href="login.html" class="btn btn-gold">Entrar</a>
+            </nav>
+        </div>
+        </header>
+
+        <main>
+
+        <section class="page-hero">
+            <div class="container">
+            <a href="index.html" class="back-link">← Voltar</a>
+            <h1>Escolha seu voo</h1>
+            <p>Selecione o tipo de aeronave e compare pilotos, horários e preços.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="search-card">
+            <div class="search-item"><span>Origem</span><strong>Florianópolis (SC)</strong></div>
+            <div class="search-divider"></div>
+            <div class="search-item"><span>Destino</span><strong>Nova Hartz (RS)</strong></div>
+            <div class="search-divider"></div>
+            <div class="search-item"><span>Data</span><strong>25 mai 2026</strong></div>
+            <div class="search-divider"></div>
+            <div class="search-item"><span>Horário</span><strong>08:00</strong></div>
+            <div class="search-divider"></div>
+            <div class="search-item"><span>Passageiros</span><strong>4 passageiros</strong></div>
+            <a href="#" class="btn btn-outline-dark">Editar busca</a>
+            </div>
+
+            <p class="eyebrow spacer-md">✦ Tipo de aeronave</p>
+            <div class="aircraft-toggle">
+            <input type="radio" name="tipo-aeronave" id="tipo-todos" class="aircraft-option" checked>
+            <label for="tipo-todos" class="aircraft-label">
+                <img src="pasta-de-imagens/grade.svg" alt="Todos os tipos" class="icon-img">
+                <span><strong>Todos os tipos</strong><span>Helicópteros e jatos</span></span>
+            </label>
+
+            <input type="radio" name="tipo-aeronave" id="tipo-helicoptero" class="aircraft-option">
+            <label for="tipo-helicoptero" class="aircraft-label">
+                <img src="img/icons/helicoptero.svg" alt="Helicóptero" class="icon-img">
+                <span><strong>Helicóptero</strong><span>Voos curtos e ágeis</span></span>
+            </label>
+
+            <input type="radio" name="tipo-aeronave" id="tipo-jato" class="aircraft-option">
+            <label for="tipo-jato" class="aircraft-label">
+                <img src="pasta-de-imagens/jato.png" alt="Jato" class="icon-img">
+                <span><strong>Jato Executivo</strong><span>Longas distâncias</span></span>
+            </label>
+            </div>
+
+            <div class="filters-row">
+            <span class="chip active">Recomendados</span>
+            <span class="chip">Menor Preço</span>
+            <span class="chip">Mais Rápido</span>
+            <span class="chip">Melhor Avaliado</span>
+            </div>
+
+            <section class="results-grid" aria-label="Resultados de voos">
+
+            <article class="flight-card" data-tipo="helicoptero">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/helicoptero.png" alt="Helicóptero" class="icon-img"></div>
+                <div class="flight-title"><strong>Helicóptero Bell 429</strong><span>55 min · Até 6 passageiros · 245 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-felipe"><span>FA</span></div>
+                <div class="pilot-info"><strong>Felipe Andrade</strong><span>★ 5,0 · Piloto Executivo</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 18.900</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            <article class="flight-card" data-tipo="helicoptero">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/helicoptero.png" alt="Helicóptero" class="icon-img"></div>
+                <div class="flight-title"><strong>Robinson R44</strong><span>50 min · Até 4 passageiros · 220 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-adriana"><span>AC</span></div>
+                <div class="pilot-info"><strong>Adriana Marcela</strong><span>★ 5,0 · Piloto Executiva</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 20.900</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            <article class="flight-card" data-tipo="jato">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/jato.png" alt="Jato" class="icon-img"></div>
+                <div class="flight-title"><strong>Jato Executivo Phenom</strong><span>1h05 · Até 8 passageiros · 830 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-jon"><span>JM</span></div>
+                <div class="pilot-info"><strong>Jon Marques</strong><span>★ 4,9 · Piloto Executivo</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 42.500</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            <article class="flight-card" data-tipo="helicoptero">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/helicoptero.png" alt="Helicóptero" class="icon-img"></div>
+                <div class="flight-title"><strong>Airbus H125 Esquilo</strong><span>40 min · Até 5 passageiros · 230 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-rafael"><span>RA</span></div>
+                <div class="pilot-info"><strong>Rafael Almeida</strong><span>★ 4,9 · Piloto Executivo</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 15.200</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            <article class="flight-card" data-tipo="jato">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/jato.png" alt="Jato" class="icon-img"></div>
+                <div class="flight-title"><strong>Citation CJ3</strong><span>1h20 · Até 7 passageiros · 780 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-marcos"><span>MO</span></div>
+                <div class="pilot-info"><strong>Marcos Oliveira</strong><span>★ 5,0 · Piloto Executivo</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 38.900</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            <article class="flight-card" data-tipo="helicoptero">
+                <div class="flight-top">
+                <div class="flight-visual"><img src="pasta-de-imagens/helicoptero.png" alt="Helicóptero" class="icon-img"></div>
+                <div class="flight-title"><strong>Bell 407</strong><span>48 min · Até 5 passageiros · 250 km/h</span></div>
+                </div>
+                <div class="pilot-row">
+                <div class="pilot-avatar foto-juliana"><span>JF</span></div>
+                <div class="pilot-info"><strong>Juliana Ferraz</strong><span>★ 4,8 · Piloto Executiva</span></div>
+                </div>
+                <div class="flight-footer">
+                <div class="flight-price"><small>A partir de</small><strong>R$ 17.400</strong></div>
+                <a href="reserva.html" class="btn btn-gold">Reservar →</a>
+                </div>
+            </article>
+
+            </section>
+        </div>
+
+        <section class="cta-band spacer-xl">
+            <h2>Ainda não tem conta?</h2>
+            <p>Crie sua conta gratuitamente para reservar seu voo e escolher seu piloto de confiança.</p>
+            <a href="cadastro.html" class="btn btn-gold btn-lg">Criar conta →</a>
+        </section>
+
+        </main>
+
+        <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand">
+                <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+                <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                </a>
+                <p>Voos privados e helicópteros executivos com segurança, conforto e exclusividade em cada trajeto.</p>
+                <div class="social-row">
+                <a href="#" aria-label="Instagram"><img src="pasta-de-imagens/instagram.svg" alt="Instagram" class="icon-img"></a>
+                <a href="#" aria-label="LinkedIn"><img src="pasta-de-imagens/linkedin.svg" alt="LinkedIn" class="icon-img"></a>
+                <a href="#" aria-label="WhatsApp"><img src="pasta-de-imagens/WhatsApp.png" alt="WhatsApp" class="icon-img"></a>
+                </div>
+            </div>
+            <nav class="footer-col">
+                <h4>Links rápidos</h4>
+                <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="voos.html">Voos</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col">
+                <h4>Conta</h4>
+                <ul>
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="cadastro.html">Criar conta</a></li>
+                <li><a href="conta.html">Minha conta</a></li>
+                <li><a href="reserva.html">Reservar viagem</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                <li>contato@airelite.com.br</li>
+                <li>(51) 95678-7568</li>
+                <li>Central de ajuda 24h</li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <span>© 2026 AirElite. Todos os direitos reservados.</span>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
