@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>AirElite</title>
+    </head>
+    <body>
+
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="brand">
+                    <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+                    <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                </a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></label>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="voos.html">Voos</a></li>
+                        <li><a href="pilotos.html">Pilotos</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                    </ul>
+                    <a href="conta.html" class="btn btn-gold">Minha conta</a>
+                </nav>
+            </div>
+        </header>
+        
+            <main>
+
+              <section class="page-hero">
+                <div class="container">
+                  <a href="pilotos.html" class="back-link">← Voltar aos pilotos</a>
+                  <h1>Finalize sua reserva</h1>
+                  <p>Confirme os dados da viagem, o piloto escolhido e conclua o pagamento.</p>
+                </div>
+              </section>
+
+              <div class="container">
+
+                <div class="booking-stepper">
+                  <div class="booking-step done"><div class="step-circle">✓</div><span class="step-label">Viagem</span></div>
+                  <div class="booking-step done"><div class="step-circle">✓</div><span class="step-label">Piloto</span></div>
+                  <div class="booking-step active"><div class="step-circle">3</div><span class="step-label">Pagamento</span></div>
+                  <div class="booking-step"><div class="step-circle">4</div><span class="step-label">Confirmação</span></div>
+                </div>
+
+                <div class="booking-card-block">
+                  <h3><span class="step-mini">1</span> Detalhes da viagem</h3>
+                  <form>
+                    <div class="field-row">
+                      <div class="field">
+                        <label for="res-origem">Origem</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/local.svg" alt="Origem" class="icon-img">
+                          <select id="res-origem">
+                            <option>Florianópolis (SC)</option>
+                            <option>São Paulo (SP)</option>
+                            <option>Rio de Janeiro (RJ)</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="res-destino">Para onde você vai?</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/destino-nav.svg" alt="Destino" class="icon-img">
+                          <select id="res-destino">
+                            <option>Nova Hartz (RS)</option>
+                            <option selected>São Paulo (SP)</option>
+                            <option>Rio de Janeiro (RJ)</option>
+                            <option>Belo Horizonte (MG)</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field-row">
+                      <div class="field">
+                        <label for="res-data">Data</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/calendario.svg"Data" class="icon-img">
+                          <input type="date" id="res-data" value="2026-08-25">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="res-horario">Horário</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/relogio.svg" alt="Horário" class="icon-img">
+                          <input type="time" id="res-horario" value="08:00">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field-row">
+                      <div class="field">
+                        <label for="res-passageiros">Quantas pessoas vão?</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/passageiros-mini.svg" alt="Passageiros" class="icon-img">
+                          <input type="number" id="res-passageiros" min="1" max="8" value="2">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="res-tipo">Tipo de aeronave</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/helicoptero.png" alt="Helicóptero" class="icon-img">
+                          <select id="res-tipo">
+                            <option>Helicóptero</option>
+                            <option>Jato Executivo</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="booking-card-block">
+                  <h3><span class="step-mini">2</span> Piloto selecionado</h3>
+                  <div class="pilot-summary">
+                    <div class="pilot-avatar foto-felipe"><span>FA</span></div>
+                    <div class="pilot-summary-info">
+                      <strong>Felipe Andrade</strong>
+                      <span>★ 5,0 · Piloto Executivo · 2.850h de voo</span>
+                    </div>
+                    <a href="pilotos.html" class="btn btn-outline-dark">Trocar piloto</a>
+                  </div>
+                </div>
+
+                <div class="booking-card-block">
+                  <h3><span class="step-mini">3</span> Método de pagamento</h3>
+
+                  <div class="aircraft-toggle">
+                    <input type="radio" name="metodo-pagamento" id="pg-cartao" class="aircraft-option" checked>
+                    <label for="pg-cartao" class="aircraft-label">
+                      <img src="pasta-de-imagens/pagamento.svg" alt="Pagamento" class="icon-img">
+                      <span><strong>Cartão de Crédito</strong><span>Visa, Mastercard, Elo</span></span>
+                    </label>
+
+                    <input type="radio" name="metodo-pagamento" id="pg-pix" class="aircraft-option">
+                    <label for="pg-pix" class="aircraft-label">
+                      <img src="pasta-de-imagens/pix.png" alt="Pix" class="icon-img">
+                      <span><strong>Pix</strong><span>Aprovação instantânea</span></span>
+                    </label>
+
+                    <input type="radio" name="metodo-pagamento" id="pg-transferencia" class="aircraft-option">
+                    <label for="pg-transferencia" class="aircraft-label">
+                      <img src="pasta-de-imagens/banco.png" alt="Transferência" class="icon-img">
+                      <span><strong>Transferência</strong><span>Pagamento bancário</span></span>
+                    </label>
+                  </div>
+
+                  <div class="payment-fields">
+                    <div class="field">
+                      <label for="res-cartao">Número do cartão</label>
+                      <div class="field-input">
+                        <img src="pasta-de-imagens/pagamento.svg" alt="Pagamento" class="icon-img">
+                        <input type="text" id="res-cartao" placeholder="0000 0000 0000 0000">
+                      </div>
+                    </div>
+                    <div class="field-row">
+                      <div class="field">
+                        <label for="res-validade">Validade</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/calendario.svg" alt="Data" class="icon-img">
+                          <input type="text" id="res-validade" placeholder="MM/AA">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label for="res-cvv">CVV</label>
+                        <div class="field-input">
+                          <img src="pasta-de-imagens/senha.svg" alt="Senha" class="icon-img">
+                          <input type="text" id="res-cvv" placeholder="123">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="booking-summary-box">
+                    <div class="booking-row"><span>Valor do voo</span><span>R$ 16.500,00</span></div>
+                    <div class="booking-row"><span>Taxas aeroportuárias</span><span>R$ 1.400,00</span></div>
+                    <div class="booking-row"><span>Serviços e comodidades</span><span>R$ 1.200,00</span></div>
+                    <div class="booking-row"><span>Seguro de viagem</span><span>R$ 200,00</span></div>
+                    <div class="booking-row total"><span>Total</span><span>R$ 19.300,00</span></div>
+                  </div>
+
+                  <a href="#confirmacao" class="btn btn-gold btn-block btn-lg">Confirmar pagamento &rarr;</a>
+                </div>
+
+                <div id="confirmacao" class="booking-card-block">
+                  <div class="confirm-banner">
+                    <div class="check-icon">✓</div>
+                    <h2>Reserva confirmada!</h2>
+                    <p>Tudo pronto para o seu voo. Enviamos os detalhes para o seu e-mail e WhatsApp.</p>
+                    <span class="confirm-code"><img src="pasta-de-imagens/ticket.svg" alt="Código" class="icon-img icon-inline"> AE429-260825</span>
+                  </div>
+
+                  <h3><span class="step-mini">4</span> Dados da viagem agendada</h3>
+                  <div class="trip-data-grid">
+                    <div class="trip-data-item"><span>Aeronave</span><strong>Helicóptero Bell 429</strong></div>
+                    <div class="trip-data-item"><span>Piloto</span><strong>Felipe Andrade</strong></div>
+                    <div class="trip-data-item"><span>Origem</span><strong>Florianópolis, SC</strong></div>
+                    <div class="trip-data-item"><span>Destino</span><strong>São Paulo, SP</strong></div>
+                    <div class="trip-data-item"><span>Data</span><strong>25 de agosto de 2026</strong></div>
+                    <div class="trip-data-item"><span>Horário</span><strong>08:00 · duração 55 min</strong></div>
+                    <div class="trip-data-item"><span>Passageiros</span><strong>2 passageiros</strong></div>
+                    <div class="trip-data-item"><span>Total pago</span><strong>R$ 19.300,00</strong></div>
+                  </div>
+
+                  <div class="qr-box">
+                    <div class="qr-visual"><img src="pasta-de-imagens/qr-code.svg" alt="QR Code de embarque"></div>
+                    <strong>AE429-260825</strong>
+                    <span>Apresente este código no embarque</span>
+                  </div>
+
+                  <div class="hero-actions">
+                    <a href="conta.html" class="btn btn-gold">Ver em Minha conta</a>
+                    <a href="suporte.html" class="btn btn-outline-dark">Preciso de ajuda</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <section class="cta-band">
+                <h2>Quer agendar outra viagem?</h2>
+                <p>Explore mais opções de voos e pilotos disponíveis na AirElite.</p>
+                <a href="voos.html" class="btn btn-gold btn-lg">Ver voos disponíveis →</a>
+              </section>
+
+            </main>
+
+            <footer class="site-footer">
+              <div class="container">
+                <div class="footer-grid">
+                  <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                      <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+                      <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                    </a>
+                    <p>Voos privados e helicópteros executivos com segurança, conforto e exclusividade em cada trajeto.</p>
+                    <div class="social-row">
+                      <a href="#" aria-label="Instagram"><img src="pasta-de-imagens/instagram.svg" alt="Instagram" class="icon-img"></a>
+                      <a href="#" aria-label="LinkedIn"><img src="pasta-de-imagens/linkedin.svg" alt="LinkedIn" class="icon-img"></a>
+                      <a href="#" aria-label="WhatsApp"><img src="pasta-de-imagens/WhatsApp.png" alt="WhatsApp" class="icon-img"></a>
+                    </div>
+                  </div>
+                  <nav class="footer-col">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                      <li><a href="index.html">Início</a></li>
+                      <li><a href="voos.html">Voos</a></li>
+                      <li><a href="pilotos.html">Pilotos</a></li>
+                      <li><a href="suporte.html">Suporte</a></li>
+                    </ul>
+                  </nav>
+                  <nav class="footer-col">
+                    <h4>Conta</h4>
+                    <ul>
+                      <li><a href="login.html">Entrar</a></li>
+                      <li><a href="cadastro.html">Criar conta</a></li>
+                      <li><a href="conta.html">Minha conta</a></li>
+                      <li><a href="reserva.html">Reservar viagem</a></li>
+                    </ul>
+                  </nav>
+                  <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                      <li>contato@airelite.com.br</li>
+                      <li>(51) 95678-7568</li>
+                      <li>Central de ajuda 24h</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <span>© 2026 AirElite. Todos os direitos reservados.</span>
+                </div>
+              </div>
+            </footer>
+
+    </body>
+</html>

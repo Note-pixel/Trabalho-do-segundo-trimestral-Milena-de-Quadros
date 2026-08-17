@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>AirElite</title>
-</head>
-<body>
+    </head>
+    <body>
     
-    <header class="site-header">
-        <div class="container header-inner">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="brand">
+                    <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite"><span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                </a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></label>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="voos.html">Voos</a></li>
+                        <li><a href="pilotos.html">Pilotos</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                    </ul>
+                    <a href="login.html" class="btn btn-gold">Entrar</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+        <section class="auth-section">
+            <div class="auth-card">
             <a href="index.html" class="brand">
-                <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirEkite"><span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+                <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
             </a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu"><span></span><span></span><span></span></label>
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="voos.html">Voos</a></li>
-                    <li><a href="pilotos.html">Pilotos</a></li>
-                    <li><a href="suporte.html">Suporte</a></li>
+
+            <h1 class="auth-title">Criar Conta</h1>
+            <p class="auth-sub">Cadastre-se para reservar voos executivos com rapidez e segurança.</p>
+
+            <form>
+                <div class="field">
+                <label for="cad-nome">Nome completo</label>
+                <div class="field-input">
+                    <img src="pasta-de-imagens/pessoa.svg" alt="Pessoa" class="icon-img">
+                    <input type="text" id="cad-nome" placeholder="Nome completo" required>
+                </div>
+                </div>
+
+                <div class="field-row">
+                <div class="field">
+                    <label for="cad-cpf">CPF</label>
+                    <div class="field-input">
+                    <img src="pasta-de-imagens/cpf.svg" alt="CPF" class="icon-img">
+                    <input type="text" id="cad-cpf" placeholder="000.000.000-00" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="cad-tel">Telefone</label>
+                    <div class="field-input">
+                    <img src="pasta-de-imagens/telefone.svg" alt="Telefone" class="icon-img">
+                    <input type="tel" id="cad-tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                </div>
+                </div>
+
+                <div class="field">
+                <label for="cad-email">E-mail</label>
+                <div class="field-input">
+                    <img src="pasta-de-imagens/email.svg" alt="E-mail" class="icon-img">
+                    <input type="email" id="cad-email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                </div>
+
+                <div class="field">
+                <label for="cad-senha">Senha</label>
+                <div class="field-input">
+                    <img src="pasta-de-imagens/senha.svg" alt="Senha" class="icon-img">
+                    <input type="password" id="cad-senha" placeholder="Crie uma senha segura" required>
+                </div>
+                </div>
+
+                <label class="check-row">
+                <input type="checkbox" required>
+                Ao criar uma conta, você concorda com nossos <a href="#" ">Termos de Uso</a> e <a href="#"">Política de Privacidade</a>.
+                </label>
+
+                <button type="submit" class="btn btn-gold btn-block">Criar Conta</button>
+            </form>
+
+            <p class="auth-switch">Já possui uma conta? <a href="login.html">Entrar</a></p>
+            </div>
+        </section>
+        </main>
+
+        <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand">
+                <img src="pasta-de-imagens/Logo.png" alt="Logotipo AirElite">
+                <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
+                </a>
+                <p>Voos privados e helicópteros executivos com segurança, conforto e exclusividade em cada trajeto.</p>
+                <div class="social-row">
+                <a href="#" aria-label="Instagram"><img src="pasta-de-imagens/instagram.svg" alt="Instagram" class="icon-img"></a>
+                <a href="#" aria-label="LinkedIn"><img src="pasta-de-imagens/linkedin.svg" alt="LinkedIn" class="icon-img"></a>
+                <a href="#" aria-label="WhatsApp"><img src="pasta-de-imagens/WhatsApp.png" alt="WhatsApp" class="icon-img"></a>
+                </div>
+            </div>
+            <nav class="footer-col">
+                <h4>Links rápidos</h4>
+                <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="voos.html">Voos</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
                 </ul>
-                <a href="login.html" class="btn btn-gold">Entrar</a>
             </nav>
-        </div>
-    </header>
-
-    <main>
-    <section class="auth-section">
-        <div class="auth-card">
-        <a href="index.html" class="brand">
-            <img src="img/logo.svg" alt="Logotipo AirElite">
-            <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
-        </a>
-
-        <h1 class="auth-title">Criar Conta</h1>
-        <p class="auth-sub">Cadastre-se para reservar voos executivos com rapidez e segurança.</p>
-
-        <form>
-            <div class="field">
-            <label for="cad-nome">Nome completo</label>
-            <div class="field-input">
-                <img src="pasta-de-imagens/pessoa.svg" alt="Pessoa" class="icon-img">
-                <input type="text" id="cad-nome" placeholder="Nome completo" required>
+            <nav class="footer-col">
+                <h4>Conta</h4>
+                <ul>
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="cadastro.html">Criar conta</a></li>
+                <li><a href="conta.html">Minha conta</a></li>
+                <li><a href="reserva.html">Reservar viagem</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                <li>contato@airelite.com.br</li>
+                <li>(51) 95678-7568</li>
+                <li>Central de ajuda 24h</li>
+                </ul>
             </div>
             </div>
-
-            <div class="field-row">
-            <div class="field">
-                <label for="cad-cpf">CPF</label>
-                <div class="field-input">
-                <img src="pasta-de-imagens/cpf.svg" alt="CPF" class="icon-img">
-                <input type="text" id="cad-cpf" placeholder="000.000.000-00" required>
-                </div>
-            </div>
-            <div class="field">
-                <label for="cad-tel">Telefone</label>
-                <div class="field-input">
-                <img src="pasta-de-imagens/telefone.svg" alt="Telefone" class="icon-img">
-                <input type="tel" id="cad-tel" placeholder="(11) 99999-9999" required>
-                </div>
-            </div>
-            </div>
-
-            <div class="field">
-            <label for="cad-email">E-mail</label>
-            <div class="field-input">
-                <img src="pasta-de-imagens/email.svg" alt="E-mail" class="icon-img">
-                <input type="email" id="cad-email" placeholder="seuemail@exemplo.com" required>
-            </div>
-            </div>
-
-            <div class="field">
-            <label for="cad-senha">Senha</label>
-            <div class="field-input">
-                <img src="pasta-de-imagens/senha.svg" alt="Senha" class="icon-img">
-                <input type="password" id="cad-senha" placeholder="Crie uma senha segura" required>
-            </div>
-            </div>
-
-            <label class="check-row">
-            <input type="checkbox" required>
-            Ao criar uma conta, você concorda com nossos <a href="#" ">Termos de Uso</a> e <a href="#"">Política de Privacidade</a>.
-            </label>
-
-            <button type="submit" class="btn btn-gold btn-block">Criar Conta</button>
-        </form>
-
-        <p class="auth-switch">Já possui uma conta? <a href="login.html">Entrar</a></p>
-        </div>
-    </section>
-    </main>
-
-    <footer class="site-footer">
-    <div class="container">
-        <div class="footer-grid">
-        <div class="footer-brand">
-            <a href="index.html" class="brand">
-            <img src="img/logo.svg" alt="Logotipo AirElite">
-            <span class="brand-text"><strong>AirElite</strong><span>Transporte aéreo executivo</span></span>
-            </a>
-            <p>Voos privados e helicópteros executivos com segurança, conforto e exclusividade em cada trajeto.</p>
-            <div class="social-row">
-            <a href="#" aria-label="Instagram"><img src="pasta-de-imagens/instagram.svg" alt="Instagram" class="icon-img"></a>
-            <a href="#" aria-label="LinkedIn"><img src="pasta-de-imagens/linkedin.svg" alt="LinkedIn" class="icon-img"></a>
-            <a href="#" aria-label="WhatsApp"><img src="pasta-de-imagens/WhatsApp.png" alt="WhatsApp" class="icon-img"></a>
+            <div class="footer-bottom">
+            <span>© 2026 AirElite. Todos os direitos reservados.</span>
             </div>
         </div>
-        <nav class="footer-col">
-            <h4>Links rápidos</h4>
-            <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="voos.html">Voos</a></li>
-            <li><a href="pilotos.html">Pilotos</a></li>
-            <li><a href="suporte.html">Suporte</a></li>
-            </ul>
-        </nav>
-        <nav class="footer-col">
-            <h4>Conta</h4>
-            <ul>
-            <li><a href="login.html">Entrar</a></li>
-            <li><a href="cadastro.html">Criar conta</a></li>
-            <li><a href="conta.html">Minha conta</a></li>
-            <li><a href="reserva.html">Reservar viagem</a></li>
-            </ul>
-        </nav>
-        <div class="footer-col">
-            <h4>Contato</h4>
-            <ul>
-            <li>contato@airelite.com.br</li>
-            <li>(51) 95678-7568</li>
-            <li>Central de ajuda 24h</li>
-            </ul>
-        </div>
-        </div>
-        <div class="footer-bottom">
-        <span>© 2026 AirElite. Todos os direitos reservados.</span>
-        </div>
-    </div>
-    </footer>
+        </footer>
 
     </body>
-    </html>
+</html>
